@@ -14,7 +14,12 @@ fn main() {
     let mut interp = Interp::new();
 
     // NOTE: commands can be added to the interpreter here.
+
+    // Add a command defined in this file.
     interp.add_command("square", cmd_square);
+
+    // Install a Molt extension crate
+    molt_sample::install(&mut interp).expect("Could not install.");
 
     // NEXT, evaluate the file, if any.
     if args.len() > 1 {
