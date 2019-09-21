@@ -1,8 +1,8 @@
 use molt::check_args;
+use molt::molt_ok;
+use molt::Interp;
 use molt::MoltResult;
 use molt::Value;
-use molt::Interp;
-use molt::molt_ok;
 
 fn main() {
     use std::env;

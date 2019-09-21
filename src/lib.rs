@@ -1,11 +1,11 @@
 //! Sample Molt Extension
 
+use molt::check_args;
+use molt::molt_ok;
 use molt::Interp;
 use molt::MoltResult;
-use molt::Value;
-use molt::molt_ok;
-use molt::check_args;
 use molt::ResultCode;
+use molt::Value;
 
 /// Install the extension's commands into the Interp.
 pub fn install(interp: &mut Interp) -> MoltResult {
