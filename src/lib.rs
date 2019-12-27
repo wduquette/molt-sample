@@ -3,9 +3,7 @@
 use molt::check_args;
 use molt::molt_ok;
 use molt::Interp;
-use molt::MoltResult;
-use molt::ResultCode;
-use molt::Value;
+use molt::types::*;
 
 /// Install the extension's commands into the Interp.
 pub fn install(interp: &mut Interp) -> MoltResult {
@@ -23,7 +21,7 @@ pub fn install(interp: &mut Interp) -> MoltResult {
 /// # double *x*
 ///
 /// Computes the double of a value
-fn cmd_double(_interp: &mut Interp, argv: &[Value]) -> MoltResult {
+fn cmd_double(_interp: &mut Interp, _: ContextID, argv: &[Value]) -> MoltResult {
     // Correct number of arguments?
     check_args(1, argv, 2, 2, "x")?;
 

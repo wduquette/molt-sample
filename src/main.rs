@@ -1,8 +1,7 @@
 use molt::check_args;
 use molt::molt_ok;
 use molt::Interp;
-use molt::MoltResult;
-use molt::Value;
+use molt::types::*;
 
 fn main() {
     use std::env;
@@ -32,7 +31,7 @@ fn main() {
 /// # square *x*
 ///
 /// Computes the square of a value
-pub fn cmd_square(_interp: &mut Interp, argv: &[Value]) -> MoltResult {
+pub fn cmd_square(_interp: &mut Interp, _: ContextID, argv: &[Value]) -> MoltResult {
     // Correct number of arguments?
     check_args(1, argv, 2, 2, "x")?;
 
