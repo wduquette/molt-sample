@@ -11,8 +11,8 @@ pub fn install(interp: &mut Interp) -> MoltResult {
     interp.add_command("double", cmd_double);
 
     // NEXT, load the extension's Tcl code
-    if let Err(ResultCode::Error(value)) = interp.eval(include_str!("lib.tcl")) {
-        panic!("Error in benchmark Tcl library: {}", value.as_str());
+    if let Err(exception) = interp.eval(include_str!("lib.tcl")) {
+        panic!("Error in benchmark Tcl library: {}", exception.value().as_str());
     }
 
     molt_ok!()

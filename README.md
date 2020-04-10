@@ -27,7 +27,7 @@ To run an interactive REPL:
 
 ```sh
 $ cargo run
-   Compiling molt-sample v0.1.0 (/Users/will/github/molt-sample)
+   Compiling molt-sample v0.3.0 (/Users/will/github/molt-sample)
     Finished dev [unoptimized + debuginfo] target(s) in 0.54s
      Running `target/debug/molt-sample`
 % square 2
@@ -40,7 +40,7 @@ To run a script:
 
 ```sh
 $ cargo run sample.tcl
-   Compiling molt-sample v0.1.0 (/Users/will/github/molt-sample)
+   Compiling molt-sample v0.3.0 (/Users/will/github/molt-sample)
     Finished dev [unoptimized + debuginfo] target(s) in 0.54s
      Running `target/debug/molt-sample sample.tcl`
 In sample.tcl
@@ -52,7 +52,7 @@ To run the script from inside the REPL:
 
 ```sh
 $ cargo run
-   Compiling molt-sample v0.1.0 (/Users/will/github/molt-sample)
+   Compiling molt-sample v0.3.0 (/Users/will/github/molt-sample)
     Finished dev [unoptimized + debuginfo] target(s) in 0.54s
      Running `target/debug/molt-sample`
 % source sample.tcl
